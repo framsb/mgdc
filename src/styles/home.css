@@ -1,0 +1,376 @@
+html,body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+.header-background{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    display: flex;
+}
+.header-content{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+p{
+    text-align: justify;
+}
+
+.banner{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 10%;
+    top: 16%;
+    z-index: 1000;
+}
+
+.card-banner{
+    padding: 40px 15px;
+    font-family: 'Abril Fatface',cursive;
+    font-size: 1.8rem;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    right:10px;
+    padding: 30px;
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+@font-face {
+    font-family: 'Nestone';
+    /* Antes de descargar el archivo, le decimos al buscador
+    que intente buscar en local la fuente con nombre
+    Cabin, Cabin Regular o Cabin-Regular */
+    src: local('Nestone'),
+        url(../fonts/Nestone.otf) format('woff');
+}  
+
+.text-2{
+    display:inline-block;
+    padding-left:15px;
+}
+
+.button-dark{
+    background: black;
+    padding: 8px 15px;
+    margin-top: 40px;
+    border:none;
+}
+
+.text-b{
+    background: linear-gradient(to bottom right, rgb(197, 197, 75), rgb(242, 242, 137));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    padding: 0%;
+    margin: 0%;  
+}
+
+.icon{
+    width: 60px;
+}
+
+/*Swipper*/
+
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.003);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center ;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content:center;
+}
+
+.swiper-pagination-bullet-active {
+        background-color: rgb(0, 0, 0) !important;
+    }
+
+.carousel-image{
+    max-width: 150px;
+    object-fit: contain;
+}
+
+/*Services*/
+/*Services text*/
+.banner-text0{
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    padding: 10px 35%;
+    width: 100%;
+}
+.text-in0{
+    position: absolute;
+    left: 36%;
+    font-size: 2rem;
+    font-family: 'Nestone',cursive ;
+}
+.text-banner0{
+    width: 400px;
+    height: 20px;
+    top: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+/*Services information*/
+.container-text{
+    font-size: 15px;
+    letter-spacing: -1px;
+    text-decoration: black ;
+}
+
+.card-text{
+    background-color: black;
+    padding: 10px;
+    width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+
+h5{
+    background-image: linear-gradient(
+	to right,
+	#462523 0,
+       	#cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+   color:transparent;
+   -webkit-background-clip:text;
+}
+
+.information{
+    color: rgb(126, 126, 126);
+    letter-spacing: 1px; 
+    text-align: justify;
+    padding: 0px 20px 20px;
+}
+
+.card-text:hover{
+    transform: scale(1.05);
+ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+
+/*Novedades text*/
+.banner-text{
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    padding: 10px 35%;
+    width: 100px;
+}
+.text-in{
+    position: absolute;
+    left: 58%;
+    font-size: 2rem;
+    font-family: 'Nestone',cursive ;
+}
+.text-banner{
+    width: 300px;
+    height: 20px;
+    top: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/*Services video*/
+.banner-text1{
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+}
+.text-banner1{
+    width: 100%;
+    height: 20px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.video_center{
+    width: 40%;
+    height: 40%;
+    margin: 0 23%;
+    box-shadow: rgba(242, 254, 4, 0.4) 0px 30px 90px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.gold {
+    color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    background-color: #000;
+    -webkit-background-clip: text;
+    font-family:  'Abril Fatface',cursive;
+    position: relative;
+}
+.vd-gold{
+    position: relative;
+}
+.gold-b{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    width: 100%;
+}
+
+/*Footer*/
+
+.footer{
+    background: linear-gradient(to right, #434343 0%, black 100%); 
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position:absolute;
+}
+
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .logo{
+    margin-right: 150px;
+    width: 40%;
+}
+
+footer .container .logo .gdc_footer{
+    width: 150px;
+}
+
+.some {
+    margin-top: 30px;
+    margin-left: 25%;
+    display: flex;
+}
+
+.some li {
+list-style: none;
+}
+
+.some li a {
+display: inline-block;
+width: 40px;
+height: 40px;
+background: #222;
+color:#c3a343;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 10px;
+border-radius: 4px;
+text-decoration: none;
+}
+
+.some li a:hover {
+background: #c3a343;
+color:#000;
+}
+
+.some li a .fa {
+color: #fff;
+font-size: 20px;
+}
+
+.contact {
+width: calc(35%-60px);
+margin-right: 140px;
+}
+
+.contact .info {
+position: relative;
+}
+
+.contact .info li {
+display: flex;
+margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+color: #fff;
+font-size: 20px;
+margin-right: 10px;
+}
+
+.contact .info li span {
+color: #999;
+font-weight: 300;
+line-height: 1.7em;
+}
+
+.contact .info li a {
+color: #999;
+text-decoration: none;
+}
+
+.contact .info li a:hover {
+color: #fff;
+}
+footer .container h2 {
+    position: relative;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: 'Nestone',cursive ;
+}
+
+footer .container h2:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 1;
+    width: 200px;
+    height: 2px;
+    background-image: linear-gradient(
+        to right,
+        #462523 0,
+               #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+        );
+}
+
+.copyrightText {
+width: 100%;
+background: #000000;
+color: #999;
+font-weight: 300;
+padding: 1px 50px;
+}
+

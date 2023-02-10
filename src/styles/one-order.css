@@ -1,0 +1,33 @@
+
+.order-info{
+    position: relative;
+    left:60px;
+    top:10px;
+    width:60%;
+}
+
+.arrow{
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-left: 5px solid #ffd152;
+}
+
+.order-user{
+    position:relative;
+    font-size: 100px;
+    left:60px;
+}
+
+.align-left{
+    position: absolute;
+    right: 40%;
+    top:22%;
+}
+
+.table-cnti{
+    overflow-x:auto;
+    margin-top: 0px;
+    height: 200px;
+    border: 1px solid rgba(255,255,255,0.3);
+}

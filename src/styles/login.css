@@ -1,0 +1,175 @@
+
+.container-register{
+    height: 1080;
+    width: 1920;
+    overflow: hidden;
+}
+.background2{
+    height: 650px;
+    width: 100%;
+    background: #DDA70E;
+    background: -webkit-radial-gradient(bottom right, #DDA70E, #FFE0C6);
+    background: -moz-radial-gradient(bottom right, #DDA70E, #FFE0C6);
+    background: radial-gradient(to top left, #DDA70E, #FFE0C6);
+    position: absolute;
+    animation: wave 7s linear infinite, swell 4s ease -1.25s infinite;
+}
+
+@keyframes wave {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(10%);
+    }
+  }
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -30px, 0);
+  }
+  50% {
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+.container-login{
+    margin: 0;
+    padding-top: 120px;
+    width: 500px;
+    height: 620px;
+    position: relative;
+}
+
+.graph-login{
+    display: flex;
+    flex-direction : row;
+}
+
+.graph-login .card-login{
+    margin: 0 100px;
+    padding: 50px 60px;
+}
+
+.graph-login .image-login{
+    object-fit: cover;
+    position:absolute;
+    top:10rem;
+    left: 40rem;
+}
+.image-login img{
+    width: 730px;
+}
+.text-login{
+    font-size:65px;
+    font-family: 'Abril Fatface',cursive;
+}
+
+.btn-log{
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(248,54,0,1) 0%, rgba(249,212,35,1) 37%, rgba(255,207,84,1) 61%, rgba(255,161,14,1) 100%, rgba(153,97,10,1) 100%);
+    background-size: 600%;
+    border: none;
+    animation: move 15s linear infinite
+}
+
+.btn-log:hover{
+    transition: all .25s ease;
+    animation: pulse 10s infinite ease;
+    border-radius: 10px;
+    box-shadow: 0px 0px 115px -20px #48529944;
+}
+
+.btn-in{
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(249,212,35,1) 37%, rgba(255,207,84,1) 61%, rgba(255,161,14,1) 100%, rgba(153,97,10,1) 100%);
+    background-size: 600%;
+    border: none;
+    animation: move 15s linear infinite
+}
+
+.btn-close{
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(248,54,0,1) 0%, rgba(249,212,35,1));
+    background-size: 600%;
+    border: none;
+    animation: move 15s linear infinite;
+    width:100px;
+    height:40px;
+}
+
+
+
+@keyframes move {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+#log-frame .card-login{
+    margin: 0;
+    padding:0%
+}
+
+#log-frame2 .card-login{
+    margin: 0;
+    padding:0%;
+    position:absolute;
+    top:10rem;
+    right:3rem;
+}
+
+
+.login-body{
+    width: 332px;
+}
+.container-Input .error{
+    color: rgba(249,212,35,1);
+    position: absolute;
+    right: 20px;
+    bottom: 1.2rem;
+}
+
+.container-Input{
+    background: none;
+    position: relative;
+    margin:absolute;
+    padding: 10px;
+}
+
+.container-Input input{
+    border-color: black;
+    outline: none;
+    border-width: 0 0 1px;
+    border-image-slice: 1;
+    width: 100%;
+    padding: 12px;
+}
+.container-Input label{
+    position: absolute;
+    bottom: 1.4rem;
+    left: 20px;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.container-Input input:valid ~ label,
+.container-Input input:focus ~ label{
+    transform: translateY(-30px);
+    font-size: 10px;
+    background: rgba(255, 255, 255, 0);
+    outline: none;
+}

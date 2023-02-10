@@ -1,3 +1,130 @@
 /* 
     General Styles
 */
+.navbar {
+    transition: all 0.4s;
+    background: rgba(255, 255, 255, 0.204);
+}
+
+.navbar .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: rgb(8, 8, 0);
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: rgb(255, 255, 255);
+}
+
+.navbar .logo{
+    width: 150px;
+}
+
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(255, 255, 255, 0.1);
+    
+}
+
+.navbar.active .nav-link {
+    color: #555;
+    
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+ 
+}
+
+.navbar.active .navbar-brand {
+    color: #555;   
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        background: rgb(0, 0, 0);
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: rgba(255, 255, 255, 0.315);
+    }
+}
+
+/*Button*/
+.btn_gdc {
+    position: relative;
+    color: #000; 
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px ;
+    border-color: rgba(0, 0, 0, 0);
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none !important;
+}
+.btn_gdc:hover{
+    border: none;
+}
+.btn_gdc:before,
+.btn_gdc:after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    border: 1px solid;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.btn_gdc:before {
+top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #000;
+    border-left-color: #000;
+}
+.btn_gdc:after{
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #000;
+    border-right-color: #000;
+}
+.btn_gdc:hover:before,
+.btn_gdc:hover:after {
+    border-color: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.custom-btn {
+    width: 170px;
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-logout{
+    border: none;
+    background: none;
+}
+
+.card-user{
+    width:450px;
+    position: absolute;
+    left:30rem;
+    top:6rem;  
+}
+

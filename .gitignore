@@ -33,7 +33,7 @@ Thumbs.db
 
 # ignore compiled files
 *.com
-*.class
+*.0'
 *.dll
 *.exe
 *.o

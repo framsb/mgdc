@@ -31,7 +31,12 @@ module.exports = {
             loader: 'file-loader',
             options: { name: '[name].[ext]' }
           }
-        }, //for images
+        },
+        {
+          test: /\.mp4$/,
+          use: 'file-loader?name=videos/[name].[ext]',
+        },
+        //for images
         { test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/, use: ['file-loader'] } //for fonts
     ]
   },
@@ -40,7 +45,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        favicon: '4geeks.ico',
+        favicon: 'gdc_i.ico',
         template: 'template.html'
     }),
     new Dotenv({ safe: true, systemvars: true })
